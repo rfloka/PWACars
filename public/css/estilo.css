@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+.ulnav{
+    margin-left:20vh;
+}
+#footer{
+    color:#DADDD8;
+    background-color: #060606;
+    margin-bottom:0vh; 
+    position:relative;
+    width: 100%;
+    right:0; left:0;
+}
+#footer p{
+    color:#DADDD8;
+}
+#footer a{
+    color:#CDA52C;
+}
+/* contactos page */
+#myTab{
+    background-color: #161616;
+}
+#myTab a{
+    color: #CDA52C;
+}
+#gmap_canvas{
+    width: 100%;
+    height: 73vh;
+}
+#myTabContent{
+    padding-top:5%; 
+}
+#myTabContent h1{
+    font-weight: bold;
+}
+.redes{
+    font-size: 70px;
+    padding: 20px;
+}
+.redes i{
+    color:#161616;
+}
+.redes i:hover{
+    color:#CDA52C;
+}
+.tele i{
+    color:#CDA52C;
+    font-size: 50px;
+}
+.tele{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+}
+/* login modal */
+.loginheader{
+    background-color: #161616;
+    color:#CDA52C;
+}
+.loginheader span{
+    color: rgb(240, 182, 11);
+}
+.loginbody a{
+    color:#161616;
+}
+.loginbody a:hover{
+    color:#CDA52C;
+}
+/* mycar page */
+.mycarcontai{
+    padding-bottom:15%;
+    background:#fff url(../img/5.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+.swiper-card-info i{
+    font-size: 70px;
+}
+.formmycar label{
+    color:#FFFFFF;
+    font-size: 25px;
+}
+.formmycar {
+    
+     height: 91.4vh;
+}
+.swiper{
+    width:65%; 
+    margin: 0 auto;
+  }
+  .swiper-card{
+    height:80%; 
+    cursor: grab;
+    background-color: #0f0f0f;
+    color: black;
+    border: 1px solid #161616;
+    box-shadow: 0px 0px 10px #0f0f0f;
+    border-radius: 10px;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  .swiper-card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 75vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .swiper-card-info{
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+  }
+  
+  
+  /*  -- CSS ANIMATIONS! --  */
+  @keyframes fadeDownIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes leftSwipe {
+    0% {
+       transform: rotate(0deg) translate(0,0);
+       opacity: 1;
+     }
+     100% {
+         transform: rotate(-10deg) translate(-200px,20px);
+         opacity: 0;
+       }
+  }
+  @keyframes rightSwipe {
+     0% {
+        transform: rotate(0deg) translate(0,0);
+        opacity: 1;
+      }
+      100% {
+          transform: rotate(10deg) translate(200px,20px);
+          opacity: 0;
+        }
+  }
+/* landing page */
+a:hover {
+    text-decoration: none;
+  }
+  
+.caption{
+    margin-left:-15%;
+    margin-bottom:-1.6%; 
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center; 
+}
+.item{
+    background-color: black;
+    width: 100%;
+    height: 93vh;
+    overflow: hidden;
+}
+.banner{
+    margin: auto;
+    height: 93vh;
+    object-fit: fill;
+}
+.anunci{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+    object-fit: fill;
+}
+.viaturas{
+    background-image: url("../img/1.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.servicos{
+    background-image: url("../img/2.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.mycar{
+    background-image: url("../img/3.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.contactos{
+    background-image: url("../img/4.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.zoom{
+    width: 100%;
+    height: 90%;
+    transition: 1s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+.darken{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity:0.8;
+  transition: 1s;
+}
+.darken:hover{
+    opacity:1.0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.darken i{
+    margin-top:50px; 
+    font-size: 350px;
+    color:#CDA52C;
+}
+.darken h1{
+    font-size: 80px;
+    color:#fff;
+}
+.darken p{
+    font-size:21px;
+    color:#fff;
+}
+
+/* landing page */
+/* Admin Viaturas */
+#myInput {
+    background-size: 25px;
+    background-image: url('/img/search.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+/* Admin Dashboard */
+.sidenav{
+    background-color: black;
+    height: 91.2vh;
+    font-size: 20px;
+    color: white;
+}
+.sidenav ul{
+    margin-left:-5.1%;
+    margin-top:50%;
+}
+.sidenav li{
+    margin: 0 0 0 0;
+    border-bottom: 5px solid #CDA52C;
+    width: 104%;
+    padding: 10px;
+}
+.sidenav li:hover{
+    background-color: #1C1C1C;
+}
+.sidenav a{
+    color: white;
+}
+.sidenav a:hover{
+    color: #CDA52C;
+}
+.admincontent{
+    height: 91.2vh;
+    overflow-y: auto;
+}
+/* Admin Dashboard */
+/* Viaturas index */
+    /* filters */
+    .filters{
+        padding-top: 10px;
+        background-color: #161616;
+        color: azure;
+        margin-bottom: 10px;
+    }
+    .filters h3{
+       text-align: center;
+    }
+    .btncombu{
+        background-color: #202020;
+        color: #CDA52C;
+        border: 2px solid #CDA52C;
+    }
+    .btncombu:hover{
+        background-color: #CDA52C;
+        color: #202020;
+        border: 2px solid #CDA52C;
+    }
+    .searchbtn{
+        background-color: #CDA52C;
+    }
+    .btnfilter{
+        color: #FFFFFF;
+        background-color: transparent;
+        border:none;
+        float:right;
+        font-size:25px;
+    }
+
+    .btnfilter i{
+        color: #CDA52C;
+    }
+    
+    /*card*/
+    .cardcar{
+        margin-bottom: 10px;
+    }
+    .cardcar a{
+        text-decoration:none;
+    }
+    .cardcar h5,p,h6{
+        color: #202020;
+    }
+    .cardcar i{
+        color: #CDA52C;
+    }
+    .cardcar :hover{
+        background-color:#cccccc ;
+    }
+/* Viaturas */
+#close{
+    position:absolute;
+    right:1%;
+    z-index:2;
+}
+.divfullscreen{
+    display: none;
+    z-index:3;
+    background-color: #202020;
+    position: absolute;
+    width:100%;
+    height: 93vh;
+}
+.fullimg{
+    display: table;
+    margin: 0 auto;
+    width: auto;
+    height: 90vh;
+    object-fit: fill;
+}
+.carousel-inner{
+    overflow-y: auto;
+}
+.thumb ol{
+    z-index:2;
+    margin-left: -21%;
+    margin-bottom: 0;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 80vh;
+}
+.fullindi{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.nail{
+    height: auto;
+    width: 50px;
+}
+.thumb li{
+    width: 80%;
+    margin-bottom:60px; 
+    margin-left:10px;
+}
+.thumb{   
+    margin-top: 10px;
+    
+}
+.caro{
+    height: 80vh;
+}
+.caro img{
+    height: 100%;
+}
+
+
+.info{
+    margin-top: 3%;
+}
+.info h3{
+    color: #CDA52C;
+    font-weight: bold;
+}
+.info h1{
+    font-weight: bold;
+}
+.fullscreen{
+    background-color: #202020;
+    color: #CDA52C;
+    top:10px;
+    right: 10px;
+    position: absolute;
+}
+.fullscreen:hover{
+    color: #202020;
+    background-color: #CDA52C;
+}
+.btncontact,.btnfav{
+    border: none;
+    background-color: #202020;
+    color: rgb(253, 253, 253);
+}
+
+.btncontact:hover,.btnfav:hover{
+    color: #202020;
+    background-color: #CDA52C;
+}
+.extras{
+    margin: 1.5%;
+}
+.extra{
+    padding-top:10px; 
+    border-radius: 5px;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.5);
+    border-width: 2px;
+    height: 300px;
+    width: 50%;
+    overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #202020; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #CDA52C; 
+  }

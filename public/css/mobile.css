@@ -1,0 +1,144 @@
+@media screen and (max-width: 479px) {
+    /* landigpage */
+    .ulnav{
+        margin-left:00vh;
+    }
+    .darken i{
+        margin-top:3vh;
+        font-size: 150px;
+    }
+    .darken h1{
+        font-size: 60px;
+    }
+    .item{
+        width: 100%;
+        height: 45vh;
+    }
+    .banner{
+        margin: auto;
+        height: auto;
+        object-fit: fill;
+    }
+    .anunci{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .viaturas{
+        height: 46.5vh;
+    }
+    .servicos{
+        height: 46.5vh;
+    }
+    .mycar{
+        height: 46.5vh;
+    }
+    .contactos{
+        height: 46.5vh;
+    }
+    .darken p{
+        font-size:15px;
+    }
+    .caption {
+        background-color:rgba(0, 0, 0, 0.4);
+        height: 15vh;
+        margin-bottom:-6%;
+    }
+    .caption h4 {
+       font-size: 15px;
+    }   
+    .caption h5 {
+        font-size: 13px;
+    }
+    /*viatura */
+    .caro{
+        height: 50vh;
+        width: 100%;
+    }   
+    .thumb ol{
+        margin-left: 5%;
+        width: 90.5%;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 60px;
+        float:left; 
+    }
+    .thumb li{
+        float: left;
+        width: 22%;
+        margin-bottom:20%; 
+        margin-left:5px;
+    }
+    .thumb{ 
+        margin-top: 1px;
+        float:left;
+    }
+    .info h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .fullimg{
+        display: flex ;
+        transform: rotate(90deg);
+        max-width:100%;
+        max-height:auto;
+        object-fit: contain;
+        object-position: 50% 50%; /* default value: image is centered*/
+    }
+    #close{
+        position:absolute;
+        right:1%;
+        z-index:2;
+        bottom: 1%;
+    }
+    .setapref{ 
+        margin-top:-130%;
+        margin-left:40%; 
+        z-index: 4;
+        transform: rotate(90deg);
+    }
+    .divfullscreen{
+        overflow: hidden;
+        height: 92vh;
+        width:100%; 
+    }
+    .setanext{ 
+        margin-top: 130%;
+        margin-right:44%; 
+        z-index: 5;
+        transform: rotate(90deg);
+    }
+    .nail{
+        transform: rotate(90deg);
+        height: auto;
+        width: 35px;
+        overflow: scroll;
+    }
+    /*mycar*/
+    .swiper{
+        width:100%; 
+        margin: 0 auto;
+      }
+      .swiper-card-info i{
+          font-size: 30px;
+      }
+      .swiper-card-img{
+        object-fit: contain;
+        width: 100%;
+        height: 60vh;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .swiper-card-info{
+        width:100%;
+        text-align: center;
+        padding: 20px;
+        user-select: none;
+      }
+      .swiper-card-name{
+          font-size:20px;
+      }
+      .formmycar {
+        height: 100%;
+      }
+    
+}
