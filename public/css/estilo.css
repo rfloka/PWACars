@@ -468,3 +468,9 @@ a:hover {
   ::-webkit-scrollbar-thumb:hover {
     background: #CDA52C; 
   }
+/* Offline Page*/
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }

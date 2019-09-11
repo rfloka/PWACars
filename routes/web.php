@@ -12,6 +12,7 @@
 */
 /* landing page */
 Route::get('/',  'SiteController@landing');
+Route::view('/offline', 'Offline');
 /* perfil page */
 Route::get('/perfil',  'SiteController@perfil');
 Route::get('/perfil/{id}/delete',  'SiteController@deletecarperf');

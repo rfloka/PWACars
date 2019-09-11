@@ -103,7 +103,7 @@ class AdminController extends Controller
 
             }
         else:
-            DB::insert('insert into fotos (nome,veiculo_id,head) values (?,?,?)', ["holder", $viaturaID,1]);
+            DB::insert('insert into fotos (nome,veiculo_id,head) values (?,?,?)', ["holder.jpg", $viaturaID,1]);
         endif;
         return redirect()->back()->with('alert', 'Viatura Adicionada! Escolha uma Foto Principal');
     }

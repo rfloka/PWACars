@@ -1,12 +1,26 @@
-const PRECACHE = 'precache-v1';
+const PRECACHE = 'precache-v3';
+const dynamicCache = 'cache-dynamic-v1';
 const RUNTIME = 'runtime';
 
 const PRECACHE_URLS = [
-  './', 
+  '/offline',
   './css/estilo.css',
   './css/mobile.css',
   './js/main.js',
-  './js/tinder.js'
+  './js/tinder.js',
+  './js/app.js',
+  './js/combustivel.js',
+  './js/tipocarro.js',
+  './img/1.jpg',
+  './img/2.jpg',
+  './img/3.jpg',
+  './img/4.jpg',
+  './img/banner.png',
+  './img/icon.png',
+  './img/offline.png',
+  './img/logo.png',
+  'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+  'https://use.fontawesome.com/releases/v5.7.2/css/all.css'
 ];
 
 self.addEventListener('install', event => {
@@ -31,23 +45,15 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
-            // Put a copy of the response in the runtime cache.
-            return cache.put(event.request, response.clone()).then(() => {
-              return response;
-            });
-          });
-        });
-      })
-    );
-  }
+  console.log('fetch event',event);
+  event.respondWith(
+    caches.match(event.request).then(cacheRes=>{
+      return cacheRes || fetch(event.request)/*.then(fetchRes=>{
+        return cache.open(dynamicCache).then(cache=>{
+          cache.put(event.request.url, fetchRes.clone());
+          return fetchRes;
+        })
+      });*/
+    }).catch(()=> caches.match('/offline'))
+  );
 });

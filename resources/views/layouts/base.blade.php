@@ -7,11 +7,15 @@
   <title>EssencialCar @yield('title')</title>
   <!-- CSS -->
   <meta charset="utf-8">
+  <meta name="description" content="Venda automóveis, motociclos e prestação de serviços">
+  <meta name="keywords" content="carro,mota,financiamento,legalização,consultoria,automóvel">
+  <meta name="author" content="Rafael Cruz">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="{{ asset('img/icon.png') }}">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="{{ asset('img/icons/ios/ios-appicon-76-76.png') }}" >
   <meta name="apple-mobile-web-app-status-bar" content="#1C1C1C">
+  <meta name="theme-color" content="#1C1C1C">
   <!-- Bootstrap CSS -->
   @yield('links')
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
