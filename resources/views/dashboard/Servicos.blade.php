@@ -17,7 +17,7 @@
 @if (count($servicos) > 0 )
 <table class="table table-hover" id="myTable">
         <thead class="thead">
-            <tr style="background-color:#1C1C1C;color:#CDA52C">
+            <tr style="background-color:#1C1C1C;color:#B90FB9">
             <th scope="col">ID</th>
             <th scope="col">Servico</th>
             <th scope="col">Nome</th>

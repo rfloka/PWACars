@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="col-md-6" style="padding:20px;">
-            <div class="card" style="background-color:#CDA52C;">
+            <div class="card" style="background-color:#B90FB9;">
                 <div class="card-body  text-center">
                     <i class="fas fa-crown" style="font-size:150px;"></i>
                     <hr>

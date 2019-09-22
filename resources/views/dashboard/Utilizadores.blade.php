@@ -18,7 +18,7 @@
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar por nome">
 <table class="table table-hover" id="myTable">
     <thead class="thead">
-        <tr style="background-color:#1C1C1C;color:#CDA52C">
+        <tr style="background-color:#1C1C1C;color:#B90FB9">
             <th scope="col">ID</th>
             <th scope="col">Nome</th>
             <th scope="col">Email</th>
@@ -46,7 +46,7 @@
             @if (Auth::user()->id != $user->id )
                 <a class="btn btn-danger" data-toggle="modal" data-target="#delete-{{$user->id}}"><i class="fas fa-times"></i></a>
             @endif
-                
+
             </td>
         </tr>
         <div class="modal fade bd-example-modal-sm" tabindex="-1" id="delete-{{$user->id}}" role="dialog"
@@ -72,7 +72,7 @@
 @section('scripts')
 <script>
     function myFunction() {
-        // Declare variables 
+        // Declare variables
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();

@@ -26,6 +26,9 @@ class ServicosController extends Controller
             case 'extras':
                 $mensagem = "Marca: ".$request->input('marca2')."||Modelo: ".$request->input('modelo2')."||Versão: ".$request->input('versao2')."||Mensagem: ".$request->input('mensagem');
                 break;
+            case 'manutencao':
+                $mensagem = "Marca: ".$request->input('marca3')."||Modelo: ".$request->input('modelo3')."||Mensagem: ".$request->input('mensagem');
+                break;
         }
         $servico= new Servicos;
         $servico->servico=$request->input('servicos');

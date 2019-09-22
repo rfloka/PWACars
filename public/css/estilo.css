@@ -15,7 +15,7 @@ body{
 #footer{
     color:#DADDD8;
     background-color: #060606;
-    margin-bottom:0vh; 
+    margin-bottom:0vh;
     position:relative;
     width: 100%;
     right:0; left:0;
@@ -24,21 +24,21 @@ body{
     color:#DADDD8;
 }
 #footer a{
-    color:#CDA52C;
+    color:#B90FB9;
 }
 /* contactos page */
 #myTab{
     background-color: #161616;
 }
 #myTab a{
-    color: #CDA52C;
+    color: #B90FB9;
 }
 #gmap_canvas{
     width: 100%;
     height: 73vh;
 }
 #myTabContent{
-    padding-top:5%; 
+    padding-top:5%;
 }
 #myTabContent h1{
     font-weight: bold;
@@ -51,10 +51,10 @@ body{
     color:#161616;
 }
 .redes i:hover{
-    color:#CDA52C;
+    color:#B90FB9;
 }
 .tele i{
-    color:#CDA52C;
+    color:#B90FB9;
     font-size: 50px;
 }
 .tele{
@@ -65,16 +65,16 @@ body{
 /* login modal */
 .loginheader{
     background-color: #161616;
-    color:#CDA52C;
+    color:#B90FB9;
 }
 .loginheader span{
-    color: rgb(240, 182, 11);
+    color: #B90FB9;
 }
 .loginbody a{
     color:#161616;
 }
 .loginbody a:hover{
-    color:#CDA52C;
+    color:#B90FB9;
 }
 /* mycar page */
 .mycarcontai{
@@ -91,15 +91,15 @@ body{
     font-size: 25px;
 }
 .formmycar {
-    
+
      height: 91.4vh;
 }
 .swiper{
-    width:65%; 
+    width:65%;
     margin: 0 auto;
   }
   .swiper-card{
-    height:80%; 
+    height:80%;
     cursor: grab;
     background-color: #0f0f0f;
     color: black;
@@ -121,8 +121,8 @@ body{
     padding: 20px;
     user-select: none;
   }
-  
-  
+
+
   /*  -- CSS ANIMATIONS! --  */
   @keyframes fadeDownIn {
     0% {
@@ -158,13 +158,13 @@ body{
 a:hover {
     text-decoration: none;
   }
-  
+
 .caption{
     margin-left:-15%;
-    margin-bottom:-1.6%; 
+    margin-bottom:-1.6%;
     background-color:rgba(0, 0, 0, 0.8);
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
 .item{
     background-color: black;
@@ -237,9 +237,9 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 .darken i{
-    margin-top:50px; 
+    margin-top:50px;
     font-size: 350px;
-    color:#CDA52C;
+    color:#B90FB9;
 }
 .darken h1{
     font-size: 80px;
@@ -263,7 +263,7 @@ a:hover {
     border: 1px solid #ddd; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
   }
-  
+
 /* Admin Dashboard */
 .sidenav{
     background-color: black;
@@ -277,7 +277,7 @@ a:hover {
 }
 .sidenav li{
     margin: 0 0 0 0;
-    border-bottom: 5px solid #CDA52C;
+    border-bottom: 5px solid #B90FB9;
     width: 104%;
     padding: 10px;
 }
@@ -288,7 +288,7 @@ a:hover {
     color: white;
 }
 .sidenav a:hover{
-    color: #CDA52C;
+    color: #B90FB9;
 }
 .admincontent{
     height: 91.2vh;
@@ -308,16 +308,16 @@ a:hover {
     }
     .btncombu{
         background-color: #202020;
-        color: #CDA52C;
-        border: 2px solid #CDA52C;
+        color: #B90FB9;
+        border: 2px solid #B90FB9;
     }
     .btncombu:hover{
-        background-color: #CDA52C;
+        background-color: #B90FB9;
         color: #202020;
-        border: 2px solid #CDA52C;
+        border: 2px solid #B90FB9;
     }
     .searchbtn{
-        background-color: #CDA52C;
+        background-color: #B90FB9;
     }
     .btnfilter{
         color: #FFFFFF;
@@ -328,9 +328,9 @@ a:hover {
     }
 
     .btnfilter i{
-        color: #CDA52C;
+        color: #B90FB9;
     }
-    
+
     /*card*/
     .cardcar{
         margin-bottom: 10px;
@@ -342,7 +342,7 @@ a:hover {
         color: #202020;
     }
     .cardcar i{
-        color: #CDA52C;
+        color: #B90FB9;
     }
     .cardcar :hover{
         background-color:#cccccc ;
@@ -390,12 +390,12 @@ a:hover {
 }
 .thumb li{
     width: 80%;
-    margin-bottom:60px; 
+    margin-bottom:60px;
     margin-left:10px;
 }
-.thumb{   
+.thumb{
     margin-top: 10px;
-    
+
 }
 .caro{
     height: 80vh;
@@ -409,7 +409,7 @@ a:hover {
     margin-top: 3%;
 }
 .info h3{
-    color: #CDA52C;
+    color: #B90FB9;
     font-weight: bold;
 }
 .info h1{
@@ -417,14 +417,14 @@ a:hover {
 }
 .fullscreen{
     background-color: #202020;
-    color: #CDA52C;
+    color: #B90FB9;
     top:10px;
     right: 10px;
     position: absolute;
 }
 .fullscreen:hover{
     color: #202020;
-    background-color: #CDA52C;
+    background-color: #B90FB9;
 }
 .btncontact,.btnfav{
     border: none;
@@ -434,13 +434,13 @@ a:hover {
 
 .btncontact:hover,.btnfav:hover{
     color: #202020;
-    background-color: #CDA52C;
+    background-color: #B90FB9;
 }
 .extras{
     margin: 1.5%;
 }
 .extra{
-    padding-top:10px; 
+    padding-top:10px;
     border-radius: 5px;
     border-style: solid;
     border-color:rgba(0, 0, 0, 0.5);
@@ -453,20 +453,20 @@ a:hover {
 ::-webkit-scrollbar {
     width: 5px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
   }
-   
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #202020; 
+    background: #202020;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #CDA52C; 
+    background: #B90FB9;
   }
 /* Offline Page*/
 .responsive {

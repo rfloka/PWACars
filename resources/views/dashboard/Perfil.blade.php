@@ -22,13 +22,13 @@
     <div class="row">
         <div class="col-md-3 text-center" style="background-color:#060606;height:91.5vh;">
         <img src="/storage/upload/profilepics/{{$user->avatar}}" style="width:150px;height:150px;border-radius:50%;">
-        <hr>       
-        <p style="color:white;"><b style="color:#CDA52C;">Nome: </b>{{ $user->name }}</p>
-        <p style="color:white;"><b style="color:#CDA52C;"> Email: </b>{{ $user->email }}</p>
+        <hr>
+        <p style="color:white;"><b style="color:#B90FB9;">Nome: </b>{{ $user->name }}</p>
+        <p style="color:white;"><b style="color:#B90FB9;"> Email: </b>{{ $user->email }}</p>
         @if ($user->role == 1)
-        <p style="color:white;"><b style="color:#CDA52C;">Papel: </b>Admin</p>
+        <p style="color:white;"><b style="color:#B90FB9;">Papel: </b>Admin</p>
         @else
-        <p style="color:white;"><b style="color:#CDA52C;">Papel: </b>Utilizador</p>
+        <p style="color:white;"><b style="color:#B90FB9;">Papel: </b>Utilizador</p>
         @endif
         <button id="butao" class="btn btnfav" onclick="modificar()">Modificar</button>
         <form id="modif" method="POST" action="/admin/users/perfil/rolemod" style="display:none;">

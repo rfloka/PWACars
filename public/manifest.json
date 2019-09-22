@@ -1,6 +1,6 @@
 {
-    "name": "EssencialCar",
-    "short_name": "EssencialCar",
+    "name": "Silabelenco",
+    "short_name": "Silabelenco",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#1C1C1C",
@@ -11,87 +11,83 @@
     "icons": [
         {
             "src": "img/icons/android/android-launchericon-512-512.png",
-            "sizes": "512x512"
+            "sizes": "512x509"
         },
         {
             "src": "img/icons/android/android-launchericon-192-192.png",
-            "sizes": "192x192"
+            "sizes": "192x191"
         },
         {
             "src": "img/icons/android/android-launchericon-144-144.png",
-            "sizes": "144x144"
+            "sizes": "144x143"
         },
         {
             "src": "img/icons/android/android-launchericon-96-96.png",
-            "sizes": "96x96"
+            "sizes": "96x95"
         },
         {
             "src": "img/icons/android/android-launchericon-72-72.png",
-            "sizes": "72x72"
+            "sizes": "72x71"
         },
         {
             "src": "img/icons/android/android-launchericon-48-48.png",
-            "sizes": "48x48"
+            "sizes": "48x47"
         },
         {
-            "src": "img/icons/ios/ios-appicon-1024-1024.png",
-            "sizes": "1024x1024"
+            "src": "img/icons/ios/Icon-16.png",
+            "sizes": "16x15"
         },
         {
-            "src": "img/icons/ios/ios-appicon-180-180.png",
-            "sizes": "180x180"
+            "src": "img/icons/ios/Icon-20.png",
+            "sizes": "20x19"
         },
         {
-            "src": "img/icons/ios/ios-appicon-152-152.png",
-            "sizes": "152x152"
+            "src": "img/icons/ios/Icon-29.png",
+            "sizes": "29x28"
         },
         {
-            "src": "img/icons/ios/ios-appicon-120-120.png",
-            "sizes": "120x120"
+            "src": "img/icons/ios/Icon-32.png",
+            "sizes": "32x31"
         },
         {
-            "src": "img/icons/ios/ios-appicon-76-76.png",
-            "sizes": "76x76"
+            "src": "img/icons/ios/Icon-40.png",
+            "sizes": "40x39"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-750-1334.png",
-            "sizes": "750x1334"
+            "src": "img/icons/ios/Icon-48.png",
+            "sizes": "48x47"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-1334-750.png",
-            "sizes": "1334x750"
+            "src": "img/icons/ios/Icon-50.png",
+            "sizes": "50x49"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-1242-2208.png",
-            "sizes": "1242x2208"
+            "src": "img/icons/ios/Icon-72.png",
+            "sizes": "72x71"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-2208-1242.png",
-            "sizes": "2208x1242"
+            "src": "img/icons/ios/Icon-100.png",
+            "sizes": "100x99"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-640-960.png",
-            "sizes": "640x960"
+            "src": "img/icons/ios/Icon-144.png",
+            "sizes": "144x143"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-640-1136.png",
-            "sizes": "640x1136"
+            "src": "img/icons/ios/Icon-172.png",
+            "sizes": "172x171"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-1536-2048.png",
-            "sizes": "1536x2048"
+            "src": "img/icons/ios/Icon-512.png",
+            "sizes": "512x511"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-2048-1536.png",
-            "sizes": "2048x1536"
+            "src": "img/icons/ios/Icon-256.png",
+            "sizes": "256x255"
         },
         {
-            "src": "img/icons/ios/ios-launchimage-768-1024.png",
-            "sizes": "768x1024"
-        },
-        {
-            "src": "img/icons/ios/ios-launchimage-1024-768.png",
-            "sizes": "1024x768"
+            "src": "img/icons/ios/Icon-1024.png",
+            "sizes": "1024x1023"
         }
     ]
 }

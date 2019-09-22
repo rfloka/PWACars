@@ -18,7 +18,7 @@
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar por Titulo">
 <table class="table table-hover" id="myTable">
     <thead class="thead">
-        <tr style="background-color:#1C1C1C;color:#CDA52C">
+        <tr style="background-color:#1C1C1C;color:#B90FB9">
             <th scope="col">ID</th>
             <th scope="col">Titulo</th>
             <th scope="col">Preço</th>
@@ -30,8 +30,8 @@
     </thead>
     <tbody>
         @foreach($veiculos as $veiculo)
-        
-       <tr> 
+
+       <tr>
             <th scope="row"> {{$veiculo->id}}</th>
             <td>{{$veiculo->titulo}}</td>
             <td>{{$veiculo->preco}}€</td>
@@ -65,13 +65,13 @@
 @section('scripts')
 <script>
         function myFunction() {
-          // Declare variables 
+          // Declare variables
           var input, filter, table, tr, td, i, txtValue;
           input = document.getElementById("myInput");
           filter = input.value.toUpperCase();
           table = document.getElementById("myTable");
           tr = table.getElementsByTagName("tr");
-        
+
           // Loop through all table rows, and hide those who don't match the search query
           for (i = 0; i < tr.length; i++) {
             td = tr[i].getElementsByTagName("td")[0];
@@ -82,7 +82,7 @@
               } else {
                 tr[i].style.display = "none";
               }
-            } 
+            }
           }
         }
         </script>

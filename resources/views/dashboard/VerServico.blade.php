@@ -15,9 +15,9 @@
             @if ($servicos->telefone_cliente != null)
             <p><b>Telefone: </b>{{$servicos->telefone_cliente}}</p>
             @endif
-        
+
         @if( $servicos->servico == "contacto_compra")
-            <p><b>Viatura:</b><a href="/viaturas/{{$info[0]}}/show" style="color:#CDA52C;"> {{$info[1]}}
+            <p><b>Viatura:</b><a href="/viaturas/{{$info[0]}}/show" style="color:#B90FB9;"> {{$info[1]}}
                     {{$info[2]}}</a>
             </p>
         </div>

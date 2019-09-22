@@ -4,14 +4,14 @@
 <head>
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>EssencialCar @yield('title')</title>
+  <title>Silabelenco @yield('title')</title>
   <!-- CSS -->
   <meta charset="utf-8">
   <meta name="description" content="Venda automóveis, motociclos e prestação de serviços">
   <meta name="keywords" content="carro,mota,financiamento,legalização,consultoria,automóvel">
   <meta name="author" content="Rafael Cruz">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="{{ asset('img/icon.png') }}">
+  <link rel="shortcut icon" href="{{ asset('img/logo.png') }}">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="{{ asset('img/icons/ios/ios-appicon-76-76.png') }}" >
   <meta name="apple-mobile-web-app-status-bar" content="#1C1C1C">
@@ -49,7 +49,7 @@
   @endif
   <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #060606;">
     <a class="navbar-brand" href="{{ url('/') }}">
-      <img src="{{ URL::asset('img/logo.png') }}" width="100" height="40" alt="">
+      <img src="{{ URL::asset('img/logo.png') }}" height="60" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,15 +104,15 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             @if (Auth::user()->role == "1")
-            <a class="dropdown-item" href="/admin"><i style="color:#CDA52C;" class="fas fa-tachometer-alt"></i>
+            <a class="dropdown-item" href="/admin"><i style="color:#B90FB9;" class="fas fa-tachometer-alt"></i>
               Dashboard</a>
             @endif
             <a class="dropdown-item" href="/perfil">
-              <i style="color:#CDA52C;" class="fas fa-address-card"></i> Perfil
+              <i style="color:#B90FB9;" class="fas fa-address-card"></i> Perfil
             </a>
             <a class="dropdown-item" href="{{ route('logout') }}"
               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-              <i style="color:#CDA52C;" class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
+              <i style="color:#B90FB9;" class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
@@ -136,16 +136,12 @@
   <footer id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-12 text-center">
           <p>Desenvolvido por <span><a href="">Rafael Cruz</a></span></p>
-          <p><i class="fas fa-envelope" style="color:#cda52c;"></i> rafael.vieira.cruz.24@gmail.com</p>
-          <p><a href="https://www.linkedin.com/in/rafael-c-802334141/"><i class="fab fa-linkedin" style="color:#cda52c;"></i></a> <a href="https://www.facebook.com/rafael.dinis.7"><i class="fab fa-facebook-square" style="color:#cda52c;"></i></a></p>
+          <p><i class="fas fa-envelope" style="color:#B90FB9;"></i> rafael.vieira.cruz.24@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/rafael-c-802334141/"><i class="fab fa-linkedin" style="color:#B90FB9;"></i></a> <a href="https://www.facebook.com/rafael.dinis.7"><i class="fab fa-facebook-square" style="color:#B90FB9;"></i></a></p>
         </div>
-        <div class="col-sm-6 text-center">
-            <p>Ceo da EssencialCar <span><a href="">Claudio Santos</a></span></p>
-            <p><i class="fas fa-envelope" style="color:#cda52c;"></i> email do claudio </p>
-            <p><a href="https://www.facebook.com/Stuymagis"><i class="fab fa-facebook-square" style="color:#cda52c;"></i></a></p>
-          </div>
+
       </div>
       <div class="text-center">
         <i class="far fa-copyright"></i> 2019 Rafael Cruz
@@ -154,7 +150,6 @@
   </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script type="text/javascript" src="{{ URL::asset('/sw.js') }}"></script>
   <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>

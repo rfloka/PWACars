@@ -1,4 +1,4 @@
-const PRECACHE = 'precache-v3';
+const PRECACHE = 'precache-v1';
 const dynamicCache = 'cache-dynamic-v1';
 const RUNTIME = 'runtime';
 
@@ -16,7 +16,6 @@ const PRECACHE_URLS = [
   './img/3.jpg',
   './img/4.jpg',
   './img/banner.png',
-  './img/icon.png',
   './img/offline.png',
   './img/logo.png',
   'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',

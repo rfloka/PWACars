@@ -42,8 +42,8 @@
                     </div>
                     <div class="col-md-2"
                         style="display: flex;justify-content:center;align-content:center;flex-direction:column">
-                        <p style="color:white;"><b style="color:#CDA52C;">Nome: </b>{{ Auth::user()->name }}</p>
-                        <p style="color:white;"><b style="color:#CDA52C;"> Email: </b>{{ Auth::user()->email }}</p>
+                        <p style="color:white;"><b style="color:#B90FB9;">Nome: </b>{{ Auth::user()->name }}</p>
+                        <p style="color:white;"><b style="color:#B90FB9;"> Email: </b>{{ Auth::user()->email }}</p>
                     </div>
                     <div class="col-md-4"></div>
                 </div>

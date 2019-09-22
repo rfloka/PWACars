@@ -17,17 +17,17 @@
                     <label class="sr-only" for="inlineFormInputGroup">Name</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i
+                            <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i
                                     class="fas fa-user"></i></div>
                         </div>
-                        <input type="text" pattern="[A-Za-z]{2,30}" title="Tem que ter entre 2 e 20 caracteres" class="form-control" id="name1" name="name" placeholder="Nome">
+                        <input type="text" pattern="[A-Za-z ]{2,30}" title="Tem que ter entre 2 e 20 caracteres" class="form-control" id="name1" name="name" placeholder="Nome">
                     </div>
                 </div>
                 <div class="form-group col-md-4">
                     <label class="sr-only" for="inlineFormInputGroup">Email</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i
+                            <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i
                                     class="fas fa-envelope"></i></div>
                         </div>
                         <input type="email" class="form-control" id="email1" name="email" placeholder="Email">
@@ -38,17 +38,17 @@
                     <label class="sr-only" for="inlineFormInputGroup">name</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i
+                            <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i
                                     class="fas fa-user"></i></div>
                         </div>
-                        <input type="text"  pattern="[A-Za-z]{2,30}" title="Tem que ter entre 2 e 20 caracteres sem numeros" class="form-control" id="name2" name="name" value="{{Auth::user()->name}}">
+                        <input type="text"  pattern="[A-Za-z ]{2,30}" title="Tem que ter entre 2 e 20 caracteres sem numeros" class="form-control" id="name2" name="name" value="{{Auth::user()->name}}">
                     </div>
                 </div>
                 <div class="form-group col-md-4">
                     <label class="sr-only" for="inlineFormInputGroup">email</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i
+                            <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i
                                     class="fas fa-envelope"></i></div>
                         </div>
                         <input type="email" class="form-control" id="inlineFormInputGroup" id="email" name="email"
@@ -60,7 +60,7 @@
                     <label class="sr-only" for="inlineFormInputGroup">Telefone</label>
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i
+                            <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i
                                     class="fas fa-phone"></i></div>
                         </div>
                         <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
@@ -75,6 +75,7 @@
                     <option value="financiamento">Financiamento</option>
                     <option value="importados">Legalização de Veiculos Importados</option>
                     <option value="extras">Legalização de Extras</option>
+                    <option value="manutencao">Manutenção</option>
                 </select>
             </div>
             <hr>
@@ -129,15 +130,26 @@
                 <h4>Financiamento</h4>
                 <div class="form-group row">
                     <div class="col-sm-4">
-                        <input type="number" class="form-control" id="preco" name="preco"
-                            placeholder="Preço do Veiculo">
+                        <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca">
                     </div>
                     <div class="col-sm-4">
-                        <input type="number" class="form-control" id="entrada_ini" name="entrada_ini"
-                            placeholder="Entrada Inicial">
+                        <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Modelo">
                     </div>
                     <div class="col-sm-4">
-                        <input type="number" class="form-control" id="prazo" name="prazo" placeholder="Prazo em Meses">
+                        <input type="text" class="form-control" id="versao" name="versao" placeholder="Versão">
+                    </div>
+                </div>
+            </div>
+            <div id="manutencao" style="display:none;">
+                <h4>Manutenção</h4>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="marca" name="marca3"
+                            placeholder="Marca da Viatura">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="modelo" name="modelo3"
+                            placeholder="Modelo da Viatura">
                     </div>
                 </div>
             </div>
@@ -202,30 +214,41 @@
                     document.getElementById('financiamento').style.display = "none";
                     document.getElementById('importados').style.display = "none";
                     document.getElementById('extras').style.display = "none";
+                    document.getElementById('manutencao').style.display = "none";
                     break;
                 case "financiamento":
                     document.getElementById('consultoria').style.display = "none";
                     document.getElementById('financiamento').style.display = "initial";
                     document.getElementById('importados').style.display = "none";
                     document.getElementById('extras').style.display = "none";
+                    document.getElementById('manutencao').style.display = "none";
                     break;
                 case "importados":
                     document.getElementById('consultoria').style.display = "none";
                     document.getElementById('financiamento').style.display = "none";
                     document.getElementById('importados').style.display = "initial";
                     document.getElementById('extras').style.display = "none";
+                    document.getElementById('manutencao').style.display = "none";
                     break;
                 case "extras":
                     document.getElementById('consultoria').style.display = "none";
                     document.getElementById('financiamento').style.display = "none";
                     document.getElementById('importados').style.display = "none";
                     document.getElementById('extras').style.display = "initial";
+                    document.getElementById('manutencao').style.display = "none";
                     break;
-    
+                case "manutencao":
+                    document.getElementById('consultoria').style.display = "none";
+                    document.getElementById('financiamento').style.display = "none";
+                    document.getElementById('importados').style.display = "none";
+                    document.getElementById('extras').style.display = "none";
+                    document.getElementById('manutencao').style.display = "initial";
+                    break;
+
                 default:
                     break;
             }
-    
+
         }
     </script>
 @endsection

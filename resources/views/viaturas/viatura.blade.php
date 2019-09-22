@@ -38,7 +38,7 @@ $i = 0;
             <a class="setanext carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
                 <i class="fas fa-chevron-right"></i>
             </a>
-        
+
     </div>
 
 
@@ -54,7 +54,7 @@ $i = 0;
                             data-ride="carousel">
                             <!--Slides-->
                             <div class="carousel-inner" role="listbox">
-                                <button class="btn btn-primary fullscreen" style="border-color:#CDA52C;z-index:2;"
+                                <button class="btn btn-primary fullscreen" style="border-color:#B90FB9;z-index:2;"
                                     onclick="full()"><i class="fas fa-expand"></i></button>
                                 @foreach ($fotos as $foto)
                                 @if ($foto->head == 1)
@@ -108,7 +108,7 @@ $i = 0;
                         <p><b>Registo:</b> {{$viaturas->registo}}</p>
                         <p><b>Cilindrada:</b> {{number_format($viaturas->cilindrada)}}cc</p>
                         <p><b>Garantia:</b>@if ($viaturas->garantia=="com_garantia")
-                            <i class="fas fa-check-circle" style="color:#CDA52C"></i>
+                            <i class="fas fa-check-circle" style="color:#B90FB9"></i>
                             @else
                             <i class="fas fa-times-circle" style="color:red"></i>
                             @endif</p>
@@ -125,17 +125,17 @@ $i = 0;
                         <p><b>Portas:</b> {{$viaturas->portas}}</p>
                     </div>
                 </div>
-                
+
                 @guest
                 <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Faça Login">
                     <button class="btn btn-primary"
-                        style="background-color:#CDA52C;border-color:#CDA52C;pointer-events:none;" type="button"
+                        style="background-color:#B90FB9;border-color:#B90FB9;pointer-events:none;" type="button"
                         disabled><i class="fas fa-star"></i></button>
                 </span>
                 @else
                 @if ($mycar == true)
                 <button id="unfav" onclick="unfav({{$viaturas->id}})" class="btn btn-primary"
-                    style="background-color:#CDA52C;border-color:#CDA52C;"><i class="fas fa-star"></i></button>
+                    style="background-color:#B90FB9;border-color:#B90FB9;"><i class="fas fa-star"></i></button>
                 @else
                 <button id="fav" onclick="fav({{$viaturas->id}})" class="btn btn-primary btnfav"><i
                         class="fas fa-star"></i></button>
@@ -172,7 +172,7 @@ $i = 0;
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"
-                                                style="background-color:#161616;color:#CDA52C;"><i
+                                                style="background-color:#161616;color:#B90FB9;"><i
                                                     class="fas fa-user"></i></div>
                                         </div>
                                         <input type="text" class="form-control" id="name1" name="name"
@@ -184,7 +184,7 @@ $i = 0;
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"
-                                                style="background-color:#161616;color:#CDA52C;"><i
+                                                style="background-color:#161616;color:#B90FB9;"><i
                                                     class="fas fa-envelope"></i></div>
                                         </div>
                                         <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" class="form-control" id="email1" name="email"
@@ -197,7 +197,7 @@ $i = 0;
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"
-                                                style="background-color:#161616;color:#CDA52C;"><i
+                                                style="background-color:#161616;color:#B90FB9;"><i
                                                     class="fas fa-user"></i></div>
                                         </div>
                                         <input type="text" class="form-control" id="name2" name="name"
@@ -209,7 +209,7 @@ $i = 0;
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"
-                                                style="background-color:#161616;color:#CDA52C;"><i
+                                                style="background-color:#161616;color:#B90FB9;"><i
                                                     class="fas fa-envelope"></i></div>
                                         </div>
                                         <input type="email" class="form-control" id="inlineFormInputGroup" id="email"
@@ -222,7 +222,7 @@ $i = 0;
                                     <div class="input-group mb-2">
                                         <div class="input-group-prepend">
                                             <div class="input-group-text"
-                                                style="background-color:#161616;color:#CDA52C;"><i
+                                                style="background-color:#161616;color:#B90FB9;"><i
                                                     class="fas fa-phone"></i></div>
                                         </div>
                                         <input type="text" class="form-control" id="telefone" name="telefone"
@@ -295,7 +295,7 @@ $i = 0;
                     data: { car_id: id },
                     async: false
                 });
-                document.getElementById("fav").style.backgroundColor = "#CDA52C";
+                document.getElementById("fav").style.backgroundColor = "#B90FB9";
                 document.getElementById("fav").style.color = "white";
                 location.reload();
             }

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid" style="background-color:#161616;padding-bottom:30%;">
 <div class=" formmycar">
-    <h2 style="color: #CDA52C;">Como é que é o seu carro de sonho?</h2>
+    <h2 style="color: #B90FB9;">Como é que é o seu carro de sonho?</h2>
     <form method="POST" action="/mycar/filtrado">
         @csrf
         <div class="form-row">
@@ -15,7 +15,7 @@
                     <option value="Mota">Mota</option>
                 </select>
             </div>
-            
+
             <div class="form-group col-md-6" id="carro" style="display:initial;">
                 <label for="exampleFormControlSelect1">Estrutura do Carro</label>
                 <select name="tipo_carro" class="form-control form-control-lg" id="tipo_carro">
@@ -110,7 +110,7 @@
             document.getElementById('carro').style.display = "initial";
             document.getElementById('mota').style.display = "none";
         }
-    }    
+    }
     </script>
 <script type="text/javascript" src="/js/combustivel.js"></script>
 @endsection

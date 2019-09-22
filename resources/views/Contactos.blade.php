@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend" >
-                                    <div class="input-group-text" style="background-color:#161616;color:#CDA52C;"><i class="fas fa-at"></i></div>
+                                    <div class="input-group-text" style="background-color:#161616;color:#B90FB9;"><i class="fas fa-at"></i></div>
                                 </div>
                                 <input type="email" name="email" class="form-control" id="inlineFormInputGroup"
                                     placeholder="Email" required>
@@ -44,10 +44,10 @@
                 <div class="col-md-4  text-center">
                     <h1>Redes Sociais</h1>
                     <div class="container redes">
-                            <a href="https://www.facebook.com/essencialcarr/"> <i class="fab fa-facebook-square"></i></a>
-                        
-                        <a> <i class="fab fa-twitter-square"></i><br></a>
-                        <a href="https://www.instagram.com/essencialcar/"> <i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/silabelenco.alex.1"> <i class="fab fa-facebook-square"></i></a>
+
+                        <a href="https://twitter.com/silabelenco"> <i class="fab fa-twitter-square"></i><br></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
                         <a><i class="fab fa-youtube"></i><br></a>
                     </div>
                 </div>
